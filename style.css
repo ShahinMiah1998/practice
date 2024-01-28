@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calender{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #1e3799;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 30px 30px;
+}
+.date {
+    background-color: #1e3799;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: inset 4px 4px #fff,
+    inset -4px -4px 4px #fff;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 576px) {
+    .calender{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
